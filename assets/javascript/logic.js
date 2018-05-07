@@ -106,3 +106,18 @@ $(function()
 
       });
 });
+
+
+//instafeed
+  var myFeed = new Instafeed({
+    get: 'user',
+    userId: '',
+    clientId: '',
+    accessToken: '',
+    resolution: 'thumbnail',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 4,
+    links: false
+  });
+  //myFeed.run();
