@@ -2,29 +2,259 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--stylesheets-->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+  <title>BenMercer.io</title>
+
+  <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"></script>
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/master.css">
-  <!--auth for firebase-->
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css" />
-  <!-- Firebase Reference -->
-  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-  <title>BenMercer.io</title>
+
 </head>
 
-<body>
+<body id="page-top">
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Ben Mercer</h1>
+      <h3 class="mb-5">
+          <em>Front-End Web Developer and Designer</em>
+        </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About Me</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
 
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>About: </h2>
+          <p class="lead mb-5">Web Developer with over seven years of digital audio engineering experience looking to apply my knowledge as a business owner and audio engineer to the development of distributed systems’ user interfaces. As a user of digital currency and distributed systems since 2015, I want to contribute my expertise as a digital audio software user and skills with JavaScript, jQuery, C++, and CSS to help develop highly scalable and easily adaptable user interfaces for distributed systems organizations.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Do</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Skills</h3>
+        <h2 class="mb-5">Technologies and Languanges</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+          <h4>
+              <strong>Responsive</strong>
+            </h4>
+          <p class="text-faded mb-0">Looks great on any screen size!</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+          <h4>
+              <strong>Redesigned</strong>
+            </h4>
+          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+          <h4>
+              <strong>Favorited</strong>
+            </h4>
+          <p class="text-faded mb-0">Millions of users
+            <i class="fa fa-heart"></i> Start Bootstrap!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+          <h4>
+              <strong>Question</strong>
+            </h4>
+          <p class="text-faded mb-0">I mustache you a question...</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Work With Me:
+          <em>Rates,</em>
+          Details, ECT.</h2>
+      <a class="btn btn-primary btn-xl" href="">Resume</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Stationary</h2>
+                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ice Cream</h2>
+                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Strawberries</h2>
+                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Workspace</h2>
+                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Reach Out</h2>
+      <a href="#" class="btn btn-xl btn-light mr-4">Linkedin</a>
+      <a href="#" class="btn btn-xl btn-dark">Github</a>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br/>
+    <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+      </small>
+  </section>
+
+  <!--footer-->
+  <section id="footer">
+    <div class="container-fluid">
+      <div class="row text-center text-xs-center text-sm-center text-md-left">
+        <div class="col-xs-12 col-sm-12 col-md-3">
+          <h5 class="footerh5">Links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a class="links" href="https://arbittrage.com/"><i class="fa fa-angle-double-right links"></i>Home</a></li>
+            <li><a class="links" href="about.html"><i class="fa fa-angle-double-right links"></i>About</a></li>
+            <li><a class="links" href="contact.html"><i class="fa fa-angle-double-right links"></i>Contact</a></li>
+            <li><a class="links" href="https://github.com/mercerbe/Arbittrage"><i class="fa fa-angle-double-right links"></i>Github Repo</a></li>
+            <li><a class="links" href="faq.html"><i class="fa fa-angle-double-right links"></i>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline text-center">
+            <h5 class="footerh5">Connect:</h5>
+            <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><img width="35px" src="assets/images/facebook.png" /></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com" target="_blank"><img width="35px" src="assets/images/twitter.png" /></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank"><img width="35px" src="assets/images/linkedin.png" /></a></li>
+            <li class="list-inline-item"><a href="https://www.google.com" target="_blank"><img width="35px" src="assets/images/plus.png" /></a></li>
+            <li class="list-inline-item"><a href="https://github.com/mercerbe/Arbittrage" target="_blank"><img width="35px" src="assets/images/github.png" /></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><img width="35px" src="assets/images/instagram.png" /></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 text-md-right text-sm-center text-xs-center">
+          <h5 class="footerh5">Resources</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a class="links" href="contact.html" target="_blank"><i class="fa fa-angle-double-right links"></i>Advertise</a></li>
+            <li><a class="links" href="https://crushcrypto.com/websites" target="_blank"><i class="fa fa-angle-double-right links"></i>Crypto Resources</a></li>
+            <li><a class="links" href="https://www.coindesk.com" target="_blank"><i class="fa fa-angle-double-right links"></i>CoinDesk</a></li>
+            <li><a class="links" href="https://coinmarketcap.com" target="_blank"><i class="fa fa-angle-double-right links"></i>CoinMarketCap</a></li>
+            <li><a class="links" href="https://min-api.cryptocompare.com" target="_blank"><i class="fa fa-angle-double-right links"></i>CryptoCompate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="h6 copy text-sm-center text-xs-center">&copyBenMercer</p>
+  </section>
+</div>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
 
   <!--scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,10 +262,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--backstretch-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-  <!--paginate.js-->
-  <script src="jquery.easyPaginate/lib/jquery.easyPaginate.js"></script>
-  <!--custom javascript-->
+
+  <!-- Plugin JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+
   <script type="text/javascript" src="assets/javascript/logic.js"></script>
+
 </body>
 
 </html>
