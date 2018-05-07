@@ -10,7 +10,7 @@
   <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
   <title>BenMercer.io</title>
 
-  <!-- Bootstrap Core CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -54,9 +54,9 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Ben Mercer</h1>
-      <h3 class="mb-5">
-          <em>Front-End Web Developer and Designer</em>
+      <h1 class="mb-1 headerfont">Ben Mercer</h1>
+      <h3 class="mb-5 headerfont">
+          <em class="">Front-End Web Developer and Designer</em>
         </h3>
       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about">About Me</a>
     </div>
@@ -68,7 +68,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2>About: </h2>
+          <h2 class="h2header">About: </h2>
           <p class="lead mb-5">Web Developer with over seven years of digital audio engineering experience looking to apply my knowledge as a business owner and audio engineer to the development of distributed systems’ user interfaces. As a user of digital currency and distributed
             systems since 2015, I want to contribute my expertise as a digital audio software user and skills with JavaScript, jQuery, C++, and CSS to help develop highly scalable and easily adaptable user interfaces for distributed systems organizations.</p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Do</a>
@@ -128,10 +128,9 @@
   <!-- Callout -->
   <section class="callout">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Work With Me:
-          <em>Rates,</em>
-          Details, ECT.</h2>
+      <h2 class="mx-auto mb-5">Work With Me:</h2>
       <a class="btn btn-dark btn-xl" href="">Resume</a>
+      <a class="btn btn-dark btn-xl" href="">References</a>
     </div>
   </section>
 
@@ -194,9 +193,17 @@
   <!-- Call to Action -->
   <section class="content-section bg-dark text-white">
     <div class="container text-center">
-      <h2 class="mb-4">Reach Out</h2>
+      <h2 class="mb-4 h2header">Follow Me</h2>
       <a href="#" class="btn btn-xl btn-light mr-4">Linkedin</a>
       <a href="#" class="btn btn-xl btn-light">Github</a>
+    </div>
+    <div class="row">
+    <div class="container text-center col-md-6">
+      <h2 class="mb-4 h2header">Instagram</h2>
+    </div>
+    <div class="container text-center col-md-6">
+      <h2 class="mb-4 h2header">Twitter</h2>
+    </div>
     </div>
   </section>
 
@@ -205,24 +212,50 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Contact Me</h3>
-        <h2 class="mb-5"></h2>
+        <hr>
       </div>
-      <form>
-        <div class="form-group">
-          <label for="emailInput">Email Address</label>
-          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Janesmith@me.com">
-          <small id="emailHelp" class="form-text text-muted">(Will not be shared)</small>
+      <div class="row">
+        <div class="col-md-12 " id="form_container">
+          <form role="form" method="post" id="reused_form">
+
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <label for="message">
+                              Message:</label>
+                <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label for="name">
+                              Your Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <label for="email">
+                              Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button type="submit" class="btn btn-lg btn-default pull-right">Send →</button>
+              </div>
+            </div>
+
+          </form>
+          <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your message successfully!</h3>
+          </div>
+          <div id="error_message" style="width:100%; height:100%; display:none; ">
+            <h3>Error</h3> Sorry there was an error sending your form.
+
+          </div>
         </div>
-        <div class="form-group">
-          <label for="nameInput">Name</label>
-          <input type="password" class="form-control" id="nameText" placeholder="Jane Smith">
-        </div>
-        <div class="form-group">
-          <label for="Textarea">What Can I Do For You?</label>
-          <textarea class="form-control" id="textArea" rows="3" placeholder="Help me built a website!"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark">Submit</button>
-      </form>
+      </div>
     </div>
   </section>
 
