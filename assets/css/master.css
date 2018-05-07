@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   width: 100%;
   height: 100%;
 }
@@ -12,6 +11,10 @@ body {
   padding: 1.25rem 2.5rem;
 }
 
+.masthead h1, h3 {
+  color: white;
+}
+
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -19,6 +22,7 @@ body {
 
 .content-section-heading h2 {
   font-size: 3rem;
+  color: white;
 }
 
 .content-section-heading h3 {
@@ -26,12 +30,7 @@ body {
   text-transform: uppercase;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
@@ -40,6 +39,7 @@ h6 {
 }
 
 /* Map */
+
 .map {
   height: 30rem;
 }
@@ -109,6 +109,7 @@ h6 {
 }
 
 /* Side Menu */
+
 #sidebar-wrapper {
   position: fixed;
   z-index: 2;
@@ -123,6 +124,7 @@ h6 {
   transform: translateX(250px);
   background: #1D809F;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgb(52, 58, 64);
 }
 
 .sidebar-nav {
@@ -147,12 +149,11 @@ h6 {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
   text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav>.sidebar-brand {
   font-size: 1.2rem;
   background: rgba(52, 58, 64, 0.1);
   height: 80px;
@@ -162,11 +163,11 @@ h6 {
   padding-left: 15px;
 }
 
-.sidebar-nav > .sidebar-brand a {
+.sidebar-nav>.sidebar-brand a {
   color: #fff;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav>.sidebar-brand a:hover {
   color: #fff;
   background: none;
 }
@@ -289,10 +290,14 @@ h6 {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(52, 58, 64, 0.8);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+}
+
+#contact h3 {
+  margin-top: 15px;
 }
 
 footer.footer {
@@ -314,6 +319,14 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
   background-color: #155d74;
   text-decoration: none;
+}
+
+#footer h5 {
+  margin-bottom: 10px;
+}
+
+#footer p {
+  bottom: 0;
 }
 
 a {
